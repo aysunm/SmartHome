@@ -1,4 +1,5 @@
 struct K {
+    static let homeBase = "home"
     static let appName = "🏠 SHOMEM"
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "MessageCell"

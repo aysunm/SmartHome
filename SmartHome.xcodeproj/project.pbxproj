@@ -20,6 +20,11 @@
 		59E55C84268CAE7C007F504B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E55C83268CAE7C007F504B /* ChatViewController.swift */; };
 		59E55C86268CAF2B007F504B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E55C85268CAF2B007F504B /* Constants.swift */; };
 		59E55C88268CB152007F504B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59E55C87268CB152007F504B /* GoogleService-Info.plist */; };
+		59E55C8A268CE699007F504B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E55C89268CE699007F504B /* DataService.swift */; };
+		59E55C8C268CE756007F504B /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E55C8B268CE756007F504B /* HomeData.swift */; };
+		59E55C8E268CEB27007F504B /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E55C8D268CEB27007F504B /* MessageData.swift */; };
+		59E55C90268CECD5007F504B /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E55C8F268CECD5007F504B /* MessageCell.xib */; };
+		59E55C92268CED0F007F504B /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E55C91268CED0F007F504B /* MessageCell.swift */; };
 		D219B860DC4F27B054AB6758 /* Pods_SmartHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B274D52A2DF273D4EFD281 /* Pods_SmartHome.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +45,11 @@
 		59E55C83268CAE7C007F504B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		59E55C85268CAF2B007F504B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		59E55C87268CB152007F504B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		59E55C89268CE699007F504B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		59E55C8B268CE756007F504B /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		59E55C8D268CEB27007F504B /* MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
+		59E55C8F268CECD5007F504B /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		59E55C91268CED0F007F504B /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		788F9B08EB29403F2E586A3A /* Pods-SmartHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug.xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug.xcconfig"; sourceTree = "<group>"; };
 		B1B274D52A2DF273D4EFD281 /* Pods_SmartHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +116,7 @@
 				59E55C87268CB152007F504B /* GoogleService-Info.plist */,
 				59E55C6C268CA85A007F504B /* SmartHome.xcdatamodeld */,
 				59E55C85268CAF2B007F504B /* Constants.swift */,
+				59E55C89268CE699007F504B /* DataService.swift */,
 			);
 			path = SmartHome;
 			sourceTree = "<group>";
@@ -113,6 +124,8 @@
 		59E55C7A268CAB35007F504B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59E55C8B268CE756007F504B /* HomeData.swift */,
+				59E55C8D268CEB27007F504B /* MessageData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				59E55C69268CA85A007F504B /* Main.storyboard */,
+				59E55C8F268CECD5007F504B /* MessageCell.xib */,
+				59E55C91268CED0F007F504B /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E55C90268CECD5007F504B /* MessageCell.xib in Resources */,
 				59E55C73268CA85D007F504B /* LaunchScreen.storyboard in Resources */,
 				59E55C88268CB152007F504B /* GoogleService-Info.plist in Resources */,
 				59E55C70268CA85D007F504B /* Assets.xcassets in Resources */,
@@ -255,11 +271,15 @@
 				59E55C68268CA85A007F504B /* ViewController.swift in Sources */,
 				59E55C84268CAE7C007F504B /* ChatViewController.swift in Sources */,
 				59E55C7E268CADE9007F504B /* WelcomeViewController.swift in Sources */,
+				59E55C92268CED0F007F504B /* MessageCell.swift in Sources */,
 				59E55C64268CA85A007F504B /* AppDelegate.swift in Sources */,
 				59E55C80268CAE4E007F504B /* RegisterViewController.swift in Sources */,
 				59E55C6E268CA85A007F504B /* SmartHome.xcdatamodeld in Sources */,
+				59E55C8E268CEB27007F504B /* MessageData.swift in Sources */,
 				59E55C66268CA85A007F504B /* SceneDelegate.swift in Sources */,
 				59E55C86268CAF2B007F504B /* Constants.swift in Sources */,
+				59E55C8A268CE699007F504B /* DataService.swift in Sources */,
+				59E55C8C268CE756007F504B /* HomeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

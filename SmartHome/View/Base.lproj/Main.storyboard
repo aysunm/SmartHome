@@ -365,6 +365,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="messageTextField" destination="aCq-FB-77L" id="jy5-gh-dQ8"/>
+                        <outlet property="tableView" destination="evK-uo-elJ" id="cSE-bN-HCk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDw-5n-3IV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
